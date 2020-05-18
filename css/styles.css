@@ -149,6 +149,29 @@ p {
   
 }
 
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.section h2 {
+  text-transform: uppercase;
+}
+
+.section h2 span {
+  color: var(--clr-primary-5);
+}
+
+.section-center {
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 90vw;
+}
+
 /* Navbar */
 
 /* Hero */
@@ -208,6 +231,51 @@ p {
 }
 
 /* About */
+
+.about-img,
+.about-info {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width:992px) {
+
+  .about-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about-img, 
+  .about-info {
+    align-self: center;
+    flex: 0 0 calc(50% - 2rem);
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (min-width: 1170px) {
+
+  .about-img::before {
+    border: 0.5rem solid var(--clr-primary-5);
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    left: -1.5rem;
+    position: absolute;
+    top: -1.5rem;
+    width: 100%;
+  }
+
+  .about-img {
+    position: relative;
+  }
+
+  .about-photo {
+    position: relative;
+  }
+
+}
 
 /* Services */
 

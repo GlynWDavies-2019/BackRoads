@@ -64,9 +64,9 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
+img:not(.nav-logo) {
   display: block;
+  width: 100%;
 }
 
 h1,
